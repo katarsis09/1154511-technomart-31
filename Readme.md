@@ -1,8 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ekaterina Sadykova](https://up.htmlacademy.ru/htmlcss/31/user/1154511).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
