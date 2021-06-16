@@ -571,6 +571,7 @@
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+  margin-bottom: 70px;
 }
 
 .service-title {
@@ -633,7 +634,9 @@
 
 /*about*/
 
-.about-title {
+.about-title,
+.contacts-title {
+  font-family: "Cuprum";
   color: var(--basic-black);
   text-transform: uppercase;
   font-size: 30px;
@@ -809,7 +812,26 @@
 
 /*catalog*/
 
+.user-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.catalog-bar {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  
+  align-content: start;
+  width: 940px;
+ 
+  padding: 0 10px;
+}
+
 .breadcrumbs {
+  grid-column: 1 / -1;
+  margin-top: 85px;
+  margin-bottom: 40px;
   list-style: none;
   font-family: "PT Sans";
   font-weight: 400;
@@ -834,6 +856,7 @@
 }
 
 .catalog-title {
+  grid-column: 1 / -1;
   color: var(--basic-blue);
   text-transform: uppercase;
   font-size: 30px;
@@ -845,10 +868,19 @@
   width: 940px;
 }
 
+.catalog-popular-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-left: 20px;
+  margin-bottom: 48px;
+}
+
 /* Pagination */
 
 .pagination-list {
   list-style: none; 
+  margin-bottom: 127px;
 }
 
 .pagination-item a {
@@ -887,6 +919,7 @@
 }
 
 .prodact-description {
+  margin-bottom: 75px;
   font-family: "PT Sans";
   font-weight: normal;
   font-size: 13px;
@@ -895,6 +928,8 @@
 }
 
 .filter-title {
+  grid-column: 1/2;
+  margin-bottom: 50px;
   font-family: "PT Sans";
   font-weight: normal;
   font-size: 13px;
@@ -969,13 +1004,17 @@
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
-  background-color: var(--basik-light-yellow);
   width: 700px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 19px;
   text-align: left;
   text-transform: uppercase;
+}
+
+.assortement-bar {
+  grid-column: 2/-1;
+  background-color: var(--basik-light-yellow);
 }
 
 .assortement-button {
