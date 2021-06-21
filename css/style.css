@@ -143,9 +143,17 @@ fieldset {
   text-decoration: none;
 }
 
+.header {
+  padding-bottom: 60px;
+}
+
 .header-bottom {
-  justify-self: center;
-  vertical-align: middle;
+  justify-self: end;
+  align-self: center;
+}
+
+.logo-search {
+  display: flex;
 }
 
 .main-header-logo {
@@ -162,6 +170,10 @@ fieldset {
 
 .header-form-label {
   color: var(--special-white-opacity);
+}
+
+.header-form {
+  align-self: center;
 }
 
 .header-form-input {
@@ -264,6 +276,7 @@ fieldset {
   display: grid;
   justify-self: center;
   width: 940px;
+  height: 60px;
   margin: 0 auto;
   padding: 0 10px;
   list-style: none;
@@ -273,14 +286,23 @@ fieldset {
   box-shadow: inset 0px -5px 0px var(--basic-extra-dark-blue);
 }
 
-.navigation {
-  margin-bottom: 119px;
-}
-
 .main-navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-navigation-item {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 100%;
 }
 
 .main-navigation-item:hover {
@@ -344,6 +366,7 @@ fieldset {
 .container {
   width: 940px;
   margin: 0 auto;
+  padding-top: 59px;
 }
 
 .categories-list {
@@ -423,6 +446,7 @@ fieldset {
   grid-template-columns: 1fr 1fr;
   background-color: var(--basic-neutral);
   margin-bottom: 20px;
+  padding: 29px 14px 30px 28px;
 }
 
 .popular-list {
@@ -456,14 +480,15 @@ fieldset {
 
 .popular-title,
 .producers-title {
-  padding-top: 29px;
-  padding-bottom: 30px;
-  padding-left: 28px;
   text-transform: uppercase;
   color: var(--basic-blue);
   font-size: 30px;
-  line-height: 30px;
   font-weight: 400;
+}
+
+.producers-title {
+  justify-self: start;
+  align-self: center;
 }
 
 .popular-item {
@@ -508,10 +533,7 @@ fieldset {
   grid-template-columns: 1fr 1fr;
   background-color: var(--basic-neutral);
   margin-bottom: 20px;
-}
-
-.producers-title {
-  justify-self: start;
+  padding: 29px 14px 30px 28px;
 }
 
 .producers-button {
@@ -569,7 +591,9 @@ fieldset {
 
 .service-bar {
   display: grid;
-  grid-template-columns: 1fr 300px 1fr;
+  grid-template-columns: 1fr 2fr;
+  background: url("../images/delivery.png") no-repeat 100% 100%;
+  padding-bottom: 70px;
 }
 /*
 .service-list {
@@ -676,6 +700,7 @@ fieldset {
   color: var(--basic-white);
   font-size: 18px;
   line-height: 24px;
+  padding-bottom: 54px;
 }
 
 .footer-contacts-phone {
@@ -689,15 +714,20 @@ fieldset {
 }
 
 .footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 57px;
   list-style: none;
 }
 
 .footer-nav-white {
   justify-self: end;
+  width: 546px;
 }
 
 .footer-nav-yellow {
   justify-self: end;
+  width: 524px;
 }
 
 .footer-nav a {
@@ -732,13 +762,15 @@ fieldset {
 }
 
 .footer-bottom-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+
   width: 940px;
   margin: 0 auto;
   background-color: var(--basic-extra-dark-blue);
   font-size: 16px;
   line-height: 18px;
+  align-items: center;
 }
 
 .social {
@@ -788,6 +820,11 @@ fieldset {
   text-decoration: none;
 }
 
+.footer-feedback {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 .footer-feedback a {
   color: var(--special);
   text-decoration: none;
@@ -816,7 +853,6 @@ fieldset {
 
 .breadcrumbs {
   grid-column: 1 / -1;
-  margin-top: 85px;
   margin-bottom: 40px;
   list-style: none;
   font-family: "PT Sans";
@@ -839,6 +875,15 @@ fieldset {
 
 .breadcrumbs-current {
   color: var(--basic-dark);
+}
+
+.page-categories {
+  font-family: "Cuprum";
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  margin-bottom: 50px;
 }
 
 .catalog-title {
@@ -866,6 +911,9 @@ fieldset {
 /* Pagination */
 
 .pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 284px;
   list-style: none;
   margin-bottom: 127px;
 }
@@ -916,7 +964,6 @@ fieldset {
 
 .filter-title {
   grid-column: 1/2;
-  margin-bottom: 50px;
   font-family: "PT Sans";
   font-weight: normal;
   font-size: 13px;
@@ -990,7 +1037,7 @@ fieldset {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
-  width: 700px;
+
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 19px;
@@ -998,7 +1045,16 @@ fieldset {
   text-transform: uppercase;
 }
 
+.assortement-filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .assortement-list {
+  display: flex;
+  justify-content: space-between;
+  width: 443px;
   list-style: none;
 }
 
@@ -1006,6 +1062,7 @@ fieldset {
   display: grid;
   grid-template-columns: 220px 1fr;
   background-color: var(--basik-light-yellow);
+  margin-bottom: 28px;
 }
 
 .assortement-button {
