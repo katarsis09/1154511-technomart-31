@@ -16,7 +16,7 @@
         <div class="header-bar">
           <section class="header-top">
             <div class="logo-search">
-              <a class="main-header-logo">
+              <a href="index.html" class="main-header-logo">
                 <!-- <img class="logo-img" src="images/Logo.png" width="220" height="47" alt="Логотип Технопарка"> -->
               </a>
               <form
@@ -189,43 +189,25 @@
             method="get"
             action="https://echo.htmlacademy.ru"
           >
-            <fieldset class="price">
-              <legend class="price-title">Цена:</legend>
-              <input
-                class="input-range"
-                type="range"
-                name="price"
-                id="range1"
-                min="0"
-                max="30000"
-                value="0"
-              />
-              <label for="range1">от</label>
-              <input
-                class="input-range"
-                type="range"
-                name="price"
-                id="range2"
-                min="0"
-                max="30000"
-                value="30000"
-              />
-              <label for="range2">до</label>
-
-              <input
-                class="min"
-                type="number"
-                step="1"
-                min="0"
-                placeholder="0"
-              />
-              <input
-                class="max"
-                type="number"
-                step="2"
-                max="30000"
-                placeholder="30000"
-              />
+            <fieldset class="filter-item">
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0" />
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="30000" />
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset>
@@ -233,7 +215,7 @@
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-option filter-checkbox"
+                    class="visually-hidden filter-option filter-input-checkbox"
                     type="checkbox"
                     name="Bosch"
                     id="filter-Bosch"
@@ -243,7 +225,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-option filter-checkbox"
+                    class="visually-hidden filter-option filter-input-checkbox"
                     type="checkbox"
                     name="Интерскол"
                     id="filter-Интерскол"
@@ -252,7 +234,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-option filter-checkbox"
+                    class="visually-hidden filter-option filter-input-checkbox"
                     type="checkbox"
                     name="Makita"
                     id="filter-Makita"
@@ -262,7 +244,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-option filter-checkbox"
+                    class="visually-hidden filter-option filter-input-checkbox"
                     type="checkbox"
                     name="Dewalt"
                     id="filter-Dewalt"
@@ -271,7 +253,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-option filter-checkbox"
+                    class="visually-hidden filter-option filter-input-checkbox"
                     type="checkbox"
                     name="Hitachi"
                     id="filter-Hitachi"
@@ -286,6 +268,7 @@
               <ul>
                 <li class="filter-option filter-radio">
                   <input
+                    class="visually-hidden filter-input-radio"
                     type="radio"
                     name="feed"
                     value="accumulator"
@@ -300,6 +283,7 @@
                 </li>
                 <li class="filter-option filter-radio">
                   <input
+                    class="visually-hidden filter-input-radio"
                     type="radio"
                     name="feed"
                     value="network"
