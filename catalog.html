@@ -24,13 +24,13 @@
                 action="https://echo.htmlacademy.ru"
                 method="post"
               >
-                <img
+                <!--<img
                   class="header-form-img"
                   src="images/icon-search.svg "
                   width="17"
                   height="17"
                   alt="Иконка поиск"
-                />
+                />-->
                 <label class="header-form-label" for="search">Поиск</label>
                 <input
                   class="header-form-input"
@@ -128,7 +128,7 @@
     <main class="page-catalog container">
       <!--<h2>Каталог</h2>-->
       <ul class="breadcrumbs">
-        <li><a href="catalog.html">Главная</a></li>
+        <li><a class="icon-home" href="catalog.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="catalog.html">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
@@ -158,24 +158,27 @@
             </li>
             <li class="assortement-item">
               <button class="button-up button-range" type="submit">
-                <img
-                  src="images/icon-up-dir.svg "
-                  width="11"
+                <svg
+                  width="12"
                   height="10"
-                  alt="Иконка сортировки от большего к меньшему"
-                />
-                up
+                  viewBox="0 0 12 10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" />
+                </svg>
               </button>
             </li>
             <li class="assortement-item">
               <button class="button-down button-range" type="submit">
-                <img
-                  src="images/icon-down-dir.svg "
+                <svg
                   width="11"
                   height="10"
-                  alt="Иконка сортировки от меньшего к большему"
-                />
-                down
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.5 10L0 0H11" />
+                </svg>
               </button>
             </li>
           </ul>
@@ -221,6 +224,7 @@
                     id="filter-Bosch"
                     checked
                   />
+
                   <label for="filter-Bosch">Bosch</label>
                 </li>
                 <li class="filter-option filter-checkbox">
@@ -303,7 +307,7 @@
 
         <section>
           <ul class="popular-list catalog-popular-list">
-            <li class="popular-item">
+            <li class="popular-item bosch-BFG-6000">
               <img
                 class="popular-img"
                 src="images/Bosch-BFG-6000.png "
@@ -312,11 +316,17 @@
                 alt="Модель перфоратора со средним сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 6000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">30500 Р.</p>
               <a class="price-new" href="blank.html">25500 Р.</a>
             </li>
 
-            <li class="popular-item">
+            <li class="popular-item bosch-BFG-6000">
               <img
                 class="popular-img"
                 src="images/Bosch-BFG-6000.png "
@@ -325,11 +335,17 @@
                 alt="Модель перфоратора со средним сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 6000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">30500 Р.</p>
               <a class="price-new" href="blank.html">25500 Р.</a>
             </li>
 
-            <li class="popular-item">
+            <li class="popular-item bosch-BFG-6000">
               <img
                 class="popular-img"
                 src="images/Bosch-BFG-6000.png "
@@ -338,7 +354,12 @@
                 alt="Модель перфоратора со средним сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 6000</h4>
-
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">30500 Р.</p>
               <p class="badge">New</p>
               <a class="price-new" href="blank.html">25500 Р.</a>
@@ -353,6 +374,12 @@
                 alt="Модель перфоратора с тонким сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 3000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">22500 Р.</p>
               <p class="badge">New</p>
               <a class="price-new" href="blank.html">15500 Р.</a>
@@ -367,6 +394,12 @@
                 alt="Модель перфоратора со средним сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 6000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">30500 Р.</p>
               <a class="price-new" href="blank.html">25500 Р.</a>
             </li>
@@ -380,6 +413,12 @@
                 alt="Модель перфоратора с малым сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 2000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p>New</p>
               <a class="price-new" href="blank.html">12500 Р.</a>
             </li>
@@ -393,6 +432,12 @@
                 alt="Модель перфоратора с тонким сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 3000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">25500 Р.</p>
               <p class="badge">New</p>
               <a class="price-new" href="blank.html">15500 Р.</a>
@@ -407,6 +452,12 @@
                 alt="Модель перфоратора со средним сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 6000</h4>
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p class="price-old">30500 Р.</p>
               <a class="price-new" href="blank.html">25500 Р.</a>
             </li>
@@ -420,7 +471,12 @@
                 alt="Модель перфоратора с малым сверлом"
               />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 2000</h4>
-
+              <div class="hover-button">
+                <button class="buy card-button" type="button">Купить</button>
+                <button class="cart card-button" type="button">
+                  В закладки
+                </button>
+              </div>
               <p>New</p>
               <a class="price-new" href="blank.html">12500 Р.</a>
             </li>
