@@ -16,50 +16,28 @@
         <div class="header-bar">
           <section class="header-top">
             <div class="logo-search">
-              <a href="index.html" class="main-header-logo">
-                <!-- <img class="logo-img" src="images/Logo.png" width="220" height="47" alt="Логотип Технопарка"> -->
-              </a>
+              <a class="main-header-logo" href="index.html"></a>
               <form
                 class="header-form"
                 action="https://echo.htmlacademy.ru"
                 method="post"
               >
-                <!--<img
-                  class="header-form-img"
-                  src="images/icon-search.svg "
-                  width="17"
-                  height="17"
-                  alt="Иконка поиск"
-                />-->
-                <label class="header-form-label" for="search">Поиск</label>
                 <input
                   class="header-form-input"
                   id="search"
                   type="search"
                   name="search"
+                  placeholder="Поиск:"
+                  autocomplete="off"
                 />
               </form>
             </div>
 
             <div class="header-bottom">
-              <a class="header-top-link" href="blank.html">
-                <img
-                  class="header-top-bookmark"
-                  src="images/icon-bookmark.svg "
-                  width="14"
-                  height="16"
-                  alt="Иконка закладки"
-                />
+              <a class="header-top-link icon-bookmark" href="blank.html">
                 Закладки: 0
               </a>
-              <a class="header-top-link" href="blank.html">
-                <img
-                  class="header-top-cart"
-                  src="images/icon-cart.svg "
-                  width="15"
-                  height="15"
-                  alt="Иконка корзина"
-                />
+              <a class="header-top-link icon-cart" href="blank.html">
                 Корзина:0
               </a>
               <a class="header-top-order" href="blank.html">Оформить заказ</a>
@@ -88,13 +66,13 @@
             </section>
           </div>
 
-          <div class="actions">
-            <section class="header-actions user">
-              <button class="user-logout">Равшан Джамшутович</button>
-              <a class="user-link" href="blank.html">Мои заказы</a>
+          <section class="header-actions user">
+            <button class="user-logout">Равшан Джамшутович</button>
+            <ul class="profile">
+              <a class="user-link orders" href="blank.html">Мои заказы</a>
               <a class="user-link" href="blank.html">Личный кабинет</a>
-            </section>
-          </div>
+            </ul>
+          </section>
         </div>
 
         <nav class="main-navigation">

@@ -327,6 +327,8 @@ fieldset {
 
 .header-actions {
   justify-self: end;
+  flex-wrap: wrap;
+
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -1102,26 +1104,26 @@ fieldset {
   width: 44px;
   height: 44px;
   border-radius: 100%;
+  background-color: #212a3a;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .social-link.fb {
-  background: url("../images/icon-fb.svg") no-repeat 50% 50%
-    var(--basic-extra-dark-blue);
+  background-image: url("../images/icon-fb.svg");
 }
 
 .social-link.vk {
-  background: url("../images/icon-vk.svg") no-repeat 50% 50%
-    var(--basic-extra-dark-blue);
+  background-image: url("../images/icon-vk.svg");
 }
 
 .social-link.inst {
-  background: url("../images/icon-insta.svg") no-repeat 50% 50%
-    var(--basic-extra-dark-blue);
+  background-image: url("../images/icon-insta.svg");
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--basic-white);
+  background-color: var(--basic-red);
 }
 
 .footer-develop :hover,
@@ -1154,8 +1156,22 @@ fieldset {
 
 .user-link {
   text-decoration: none;
+  color: var(--basic-blue);
   font-size: 16px;
   line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.user-link:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: var(--basic-blue);
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 50%;
 }
 
 .catalog {
@@ -1234,6 +1250,9 @@ fieldset {
   line-height: 30px;
   color: var(--basic-black);
   margin-bottom: 50px;
+  padding: 29px 739px 30px 29px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    #f1f5f7;
 }
 
 .catalog-title {
@@ -1270,6 +1289,7 @@ fieldset {
   background-color: var(--basic-red);
   color: var(--basic-white);
   transform: rotate(45deg);
+  text-transform: uppercase;
 }
 
 .popular-item h4 {
@@ -1597,7 +1617,7 @@ fieldset {
 
 .filter-button:hover {
   background-color: var(--basic-white);
-  border: 1px solid var(--basic-greylight);
+  border: 2px solid var(--basic-greylight);
 }
 
 .assortement-title {
@@ -1685,11 +1705,31 @@ fieldset {
 }
 
 .user-logout {
+  font-size: 21px;
+  line-height: 21px;
   border: none;
   width: 299px;
   padding: 12px 56px;
-  background: url("../images/icon-user.svg") no-repeat 0% 50%,
-    url("../images/icon-login.svg") no-repeat 100% 50% var(--basic-white);
+  background: url("../images/icon-user.svg") no-repeat 15px 50%,
+    url("../images/icon-login.svg") no-repeat 262px 50% var(--basic-white);
+}
+
+.user-logout:hover {
+  background: url("../images/icon-login-hover.svg") no-repeat 262px 50%,
+    url("../images/icon-user-hover.svg") no-repeat 15px 50% var(--basic-white);
+}
+
+.user-logout:active {
+  background: url("../images/icon-login.svg") no-repeat 262px 50%,
+    url("../images/icon-user.svg") no-repeat 15px 50% var(--basic-white);
+  color: var(--basic-greylight);
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 19px;
 }
 
 /*Pop up*/
@@ -1735,7 +1775,6 @@ fieldset {
 
 .user,
 .login-email {
-  width: 220px;
   height: 38px;
   padding-left: 12px;
 }
