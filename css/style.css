@@ -707,6 +707,8 @@ fieldset {
 
 .popular-img {
   margin-bottom: 28px;
+  object-fit: contain;
+  background-color: var(--basic-white);
 }
 
 .popular-title,
@@ -1613,6 +1615,7 @@ fieldset {
   text-transform: uppercase;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-greylight);
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -1741,13 +1744,36 @@ fieldset {
   background-position: 0 0;
   background-repeat: repeat;
   width: 620px;
-  min-height: 430px;
+  height: 430px;
   margin: 0 auto;
   padding-top: 46px;
   padding-left: 80px;
   padding-right: 80px;
-
   align-content: start;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-login {
+  border-top: 7px solid var(--basic-red);
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+
+  /*display: none;*/
+}
+
+.modal-close {
+  position: absolute;
+  font-size: 0px;
+  top: 20px;
+  right: 10px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/icon-close.svg");
 }
 
 .name {
@@ -1769,7 +1795,7 @@ fieldset {
 .login-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  gap: 10px 13px;
   margin: 0 auto;
 }
 
@@ -1777,6 +1803,7 @@ fieldset {
 .login-email {
   height: 38px;
   padding-left: 12px;
+  width: 100%;
 }
 
 .message-text {
@@ -1789,12 +1816,6 @@ fieldset {
 .message {
   grid-column: 1/3;
   grid-row: 2/3;
-  margin-top: 20px;
-}
-
-.modal-login {
-  border-top: 7px solid var(--basic-dark-red);
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
 }
 
 .modal-login h2 {
@@ -1817,7 +1838,8 @@ fieldset {
   text-decoration: none;
   text-align: center;
   display: block;
-
+  border: none;
+  cursor: pointer;
   margin: 37px auto 0 auto;
 }
 
@@ -1826,11 +1848,68 @@ fieldset {
   min-height: 449px;
   margin: 0 auto;
   padding: 0px;
-  position: relative;
+
+  /*display: none;*/
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .button-close {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-catalog {
+  width: 620px;
+  height: 275px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-top: 7px solid var(--basic-red);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*display: none;*/
+}
+
+.item-added {
+  font-family: "Cuprum";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 27px;
+}
+
+.checkout,
+.continue-shopping {
+  width: 192px;
+  height: 38px;
+  margin: 0px;
+}
+
+.continue-shopping {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.modal-catalog-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 81px;
+}
+
+.modal-catalog-buttons {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 37px 113px;
+  justify-content: space-between;
+  margin-top: auto;
 }
