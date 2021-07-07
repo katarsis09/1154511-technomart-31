@@ -80,7 +80,7 @@
                 <a class="header-navigation" href="blank.html">Компания</a>
               </li>
               <li class="main-navigation-item">
-                <a class="header-navigation" href="blank.html">Каталог</a>
+                <a class="header-navigation" href="catalog.html">Каталог</a>
               </li>
               <li class="main-navigation-item">
                 <a class="header-navigation" href="blank.html">Новости</a>
@@ -103,72 +103,34 @@
     </header>
 
     <main class="container">
-      <!--<div class="categories-bar">-->
+      <h1 class="visually-hidden">Техномарт»</h1>
       <section class="categories">
-        <!--<h2>Категории</h2> -->
+        <h2 class="visually-hidden">Категории товар</h2>
         <div class="categories-card">
           <ul class="categories-list">
             <li class="categories-item categories-material">
               <div>
                 <h3 class="categories-title">Материалы</h3>
-                <!--<span class="badge">NEW</span>-->
                 <a class="categories-link" href="blank.html">На любой вкус</a>
               </div>
-              <div>
-                <!--<img
-                  class="categories-img"
-                  src="images/material-card.svg "
-                  width="44"
-                  height="65"
-                  alt="Банка краски с белой заливкой>"
-                />-->
-              </div>
+              <div></div>
             </li>
             <li class="categories-item categories-tool">
               <h3 class="categories-title">Инструмент</h3>
               <a class="categories-link" href="blank.html">На все случаи</a>
-              <!--<img
-                class="categories-img"
-                src="images/Tool-card.svg "
-                width="75"
-                height="61"
-                alt="Дрель с белой заливкой"
-              />-->
             </li>
             <li class="categories-item categories-technics">
               <h3 class="categories-title">Техника</h3>
               <a class="categories-link" href="blank.html">Для стройки</a>
-              <!--<img
-                class="categories-img"
-                src="images/Technics-card.svg "
-                width="78"
-                height="62"
-                alt="Трактор с белой заливкой"
-              />-->
             </li>
             <li class="categories-item categories-sales">
               <h3 class="categories-title">Скидки 50%</h3>
               <a class="categories-link" href="blank.html">На 350 товаров</a>
-              <!--<img
-                class="categories-img"
-                src="images/Sales-card.svg "
-                width="59"
-                height="72"
-                alt="Корзина с товарами с белой заливкой"
-              />-->
             </li>
             <li class="categories-item categories-delivery">
               <h3 class="categories-title">Доставка</h3>
               <a class="categories-link" href="blank.html">Бесплатно</a>
-              <!--<img
-                class="categories-img"
-                src="images/Delivery-card.svg "
-                width="78"
-                height="63"
-                alt="Грузовой автомобиль с белой заливкой"
-              />-->
             </li>
-
             <li class="slider-bar">
               <section class="slider">
                 <ul class="slider-list">
@@ -211,8 +173,6 @@
           </ul>
         </div>
       </section>
-      <!-- </div>  -->
-
       <section class="popular">
         <header class="popular-header">
           <h2 class="popular-title">Популярные товары:</h2>
@@ -437,18 +397,11 @@
               поднимая его на ваш этаж!
             </p>
           </section>
-          <!--<img
-            class="delivery-img"
-            src="images/Delivery.png "
-            width="468"
-            height="261"
-            alt="Грузовой автомобиль"
-          />-->
         </div>
       </section>
 
       <section class="about">
-        <!-- <h2>О нас</h2> -->
+        <h2 class="visually-hidden">О нас</h2>
         <section class="about-info">
           <h3 class="about-title">Компания "ТЕХНОМАРТ"</h3>
           <p class="about-description">
@@ -497,14 +450,14 @@
         <div class="footer-top-wrapper">
           <a>
             <img
-              class="logo-img"
-              src="images/Logo.png"
+              class="logo-img-footer"
+              src="images/logo-footer.png"
               width="220"
-              height="47"
+              height="68"
               alt="Логотип Технопарка"
             />
           </a>
-          <!--<h2>Контактная информация</h2>-->
+          <h2 class="visually-hidden">Контактная информация</h2>
           <div class="footer-address">
             <p class="footer-contacts">
               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
@@ -524,7 +477,9 @@
                 <a class="footer-navigation-white" href="blank.html">Новости</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-navigation-white" href="blank.html">Каталог</a>
+                <a class="footer-navigation-white" href="catalog.html"
+                  >Каталог</a
+                >
               </li>
               <li class="footer-nav-item">
                 <a class="footer-navigation-white" href="blank.html"
@@ -572,7 +527,7 @@
           </p>
 
           <section class="social">
-            <!--<h2>Соц сети</h2>-->
+            <h2 class="visually-hidden">Социальные сети</h2>
 
             <ul class="social-list">
               <li class="social-item">
@@ -603,7 +558,7 @@
     </footer>
 
     <section class="modal modal-login">
-      <!--<h2>Личный кабинет</h2>-->
+      <h2 class="visually-hidden">Обратная связь</h2>
       <div>
         <form
           class="login-form"
@@ -635,7 +590,6 @@
             <textarea
               class="message-text"
               id="text"
-              type="text"
               name="login"
               placeholder="В свободной форме"
             ></textarea>
@@ -658,6 +612,29 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <script src="js/script.js"></script>
+    <section class="modal modal-catalog">
+      <div class="modal-catalog-text">
+        <img
+          src="images/icon-mark.svg"
+          width="66"
+          height="66"
+          alt="Зеленая галочка"
+        />
+        <p class="item-added">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal-catalog-buttons">
+        <button class="modal-button checkout" type="submit">
+          Оформить заказ
+        </button>
+        <button class="modal-button continue-shopping" type="submit">
+          Продолжить покупки
+        </button>
+      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
