@@ -2421,7 +2421,7 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f1f1f1 var(--special-modal-white);
+  background-color: var(--special-modal-white);
   padding: 37px 113px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
