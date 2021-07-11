@@ -37,8 +37,11 @@
               <a class="header-top-link icon-bookmark" href="blank.html">
                 Закладки: 0
               </a>
-              <a class="header-top-link icon-cart" href="blank.html">
-                Корзина:0
+              <a
+                class="header-top-link icon-cart icon-cart-catalog"
+                href="blank.html"
+              >
+                Корзина: 10
               </a>
               <a class="header-top-order" href="blank.html">Оформить заказ</a>
             </div>
@@ -56,10 +59,9 @@
 
           <div class="contacts">
             <section class="header-contacts">
-              <h2 class="visually-hidden">Контактная информация</h2>
               <a class="contacts-phone" href="tel:+78126660266"
-                >+7 (812) 666-02-66</a
-              ><br />
+                >+7 800 555-86-28</a
+              >
               <p class="address">
                 г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
               </p>
@@ -138,7 +140,9 @@
                 По функционалу
               </button>
             </li>
-            <li class="assortement-item">
+          </ul>
+          <ul class="assortement-sort">
+            <li class="assortement-sort-item">
               <button class="button-up button-range" type="submit">
                 <svg
                   width="12"
@@ -150,7 +154,7 @@
                 </svg>
               </button>
             </li>
-            <li class="assortement-item">
+            <li class="assortement-sort-item">
               <button class="button-down button-range" type="submit">
                 <svg
                   width="11"
@@ -175,7 +179,7 @@
             action="https://echo.htmlacademy.ru"
           >
             <fieldset class="filter-item">
-              <legend>Цена:</legend>
+              <legend class="cost">Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -186,10 +190,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="number" name="min-price" value="0" />
+                    <input type="number" name="min-price" value="0" />
                   </label>
                   <label class="max-price">
-                    до <input type="number" name="max-price" value="30000" />
+                    <input type="number" name="max-price" value="30000" />
                   </label>
                 </div>
               </div>
@@ -468,16 +472,22 @@
 
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current">
-              <a href="blank.html">1</a>
+              <a class="pagination-link" href="blank.html">1</a>
             </li>
-            <li class="pagination-item"><a href="blank.html">2</a></li>
-            <li class="pagination-item"><a href="blank.html">3</a></li>
-            <li class="pagination-item"><a href="blank.html">Следующая</a></li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="blank.html">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="blank.html">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="blank.html">Следующая</a>
+            </li>
           </ul>
         </section>
       </div>
 
-      <section>
+      <section class="product-info">
         <h2 class="prodact-title">Пара слов о перфораторах</h2>
         <p class="prodact-description">
           Перфоратор — универсальный строительный инструмент. Предназначен для
@@ -493,7 +503,7 @@
 
     <footer class="footer">
       <section class="footer-top">
-        <div class="footer-top-wrapper">
+        <div class="footer-top-wrapper container">
           <a>
             <img
               class="logo-img-footer"
@@ -508,8 +518,8 @@
             <p class="footer-contacts">
               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
             </p>
-            <a class="footer-contacts-phone" href="tel:+78126660266"
-              >+7 (812) 666-02-66</a
+            <a class="footer-contacts-phone" href="tel:+78005568628"
+              >+7 (800) 555-86-28</a
             >
           </div>
           <nav class="footer-nav footer-nav-white footer-top">
@@ -523,7 +533,9 @@
                 <a class="footer-navigation-white" href="blank.html">Новости</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-navigation-white" href="blank.html">Каталог</a>
+                <a class="footer-navigation-white" href="catalog.html"
+                  >Каталог</a
+                >
               </li>
               <li class="footer-nav-item">
                 <a class="footer-navigation-white" href="blank.html"
@@ -564,7 +576,7 @@
         </div>
       </section>
       <section class="footer-bottom">
-        <div class="footer-bottom-wrapper">
+        <div class="footer-bottom-wrapper container">
           <p class="copyright">
             © 2010–2021 Компания «Техномарт»<br />
             Все права защищены
@@ -600,7 +612,6 @@
         </div>
       </section>
     </footer>
-
     <section class="modal modal-catalog">
       <div class="modal-catalog-text">
         <img
