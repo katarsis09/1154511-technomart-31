@@ -9,47 +9,41 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: url("../fonts/cuprum.woff2") format("woff2"),
-    url("../fonts/cuprum.woff") format("woff");
+  src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url("../fonts/cuprumbold.woff2") format("woff2"),
-    url("../fonts/cuprumbold.woff") format("woff");
+  src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
-    url("../fonts/cuprumbolditalic.woff") format("woff");
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Cuprum";
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
-    url("../fonts/cuprumitalic.woff") format("woff");
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -383,8 +377,7 @@ fieldset {
   padding-top: 4px;
   padding-bottom: 5px;
   padding-left: 26px;
-  background: url("../images/icon-phone.svg") no-repeat 33px 10px
-    var(--basic-grey);
+  background: url("../images/icon-phone.svg") no-repeat 33px 10px var(--basic-grey);
 }
 
 .header-actions {
@@ -695,30 +688,25 @@ fieldset {
 }
 
 .categories-material {
-  background: url("../images/material-card.svg") no-repeat 85% 50%
-    var(--special-yellow);
+  background: url("../images/material-card.svg") no-repeat 85% 50% var(--special-yellow);
   position: relative;
   overflow: hidden;
 }
 
 .categories-tool {
-  background: url("../images/tool-card.svg") no-repeat 85% 50%
-    var(--special-blue);
+  background: url("../images/tool-card.svg") no-repeat 85% 50% var(--special-blue);
 }
 
 .categories-technics {
-  background: url("../images/technics-card.svg") no-repeat 85% 50%
-    var(--special-pink);
+  background: url("../images/technics-card.svg") no-repeat 85% 50% var(--special-pink);
 }
 
 .categories-sales {
-  background: url("../images/sales-card.svg") no-repeat 80% 50%
-    var(--special-green);
+  background: url("../images/sales-card.svg") no-repeat 80% 50% var(--special-green);
 }
 
 .categories-delivery {
-  background: url("../images/delivery-card.svg") no-repeat 85% 50%
-    var(--special-yellow);
+  background: url("../images/delivery-card.svg") no-repeat 85% 50% var(--special-yellow);
 }
 .slider {
   position: relative;
@@ -736,10 +724,12 @@ fieldset {
 
 .slide-1 {
   background-image: url("../images/slider.jpg");
+  background-color: var(--special-range-grey);
 }
 
 .slide-2 {
   background-image: url("../images/slider-drill.jpg");
+  background-color: var(--special-range-grey);
 }
 
 .categories-slider-title {
@@ -1217,6 +1207,11 @@ fieldset {
   font-weight: normal;
 }
 
+.guarantee,
+.credit {
+  display: none;
+}
+
 .service-button {
   width: 100%;
   font-size: 21px;
@@ -1229,10 +1224,8 @@ fieldset {
   color: var(--basic-white);
   background-color: var(--basic-blue);
   border: none;
-  -webkit-box-shadow: 0px 1px 0px var(--basic-extra-dark-blue),
-    inset 0px 1px 0px var(--special-dark-blue);
-  box-shadow: 0px 1px 0px var(--basic-extra-dark-blue),
-    inset 0px 1px 0px var(--special-dark-blue);
+  -webkit-box-shadow: 0px 1px 0px var(--basic-extra-dark-blue), inset 0px 1px 0px var(--special-dark-blue);
+  box-shadow: 0px 1px 0px var(--basic-extra-dark-blue), inset 0px 1px 0px var(--special-dark-blue);
 }
 
 .service-button.active {
@@ -1460,6 +1453,7 @@ fieldset {
 .social-item {
   list-style: none;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .social-list {
@@ -1648,18 +1642,10 @@ fieldset {
   padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 30px;
-  background: -o-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+  background: -o-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%), var(--basic-light-grey);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0))),
     var(--basic-light-grey);
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#ffffff),
-      to(rgba(255, 255, 255, 0))
-    ),
-    var(--basic-light-grey);
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
-    var(--basic-light-grey);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), var(--basic-light-grey);
   width: 940px;
 }
 
@@ -1906,6 +1892,14 @@ fieldset {
 }
 
 .price-control input[type="number"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Firefox */
+
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
