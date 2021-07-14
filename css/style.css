@@ -1183,14 +1183,49 @@ fieldset {
   display: grid;
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
-  background: url("../images/delivery.png") no-repeat 100% 20px;
+}
+
+.service-section.active {
+  display: block;
+}
+
+.service-section {
+  display: none;
 }
 
 .delivery {
   padding-left: 2px;
+  background: url("../images/delivery.png") no-repeat 100% 20px;
 }
 
-.delivery-description {
+.guarantee {
+  padding-left: 2px;
+  background: url("../images/guarantee.png") no-repeat 105% 2px;
+}
+
+.credit {
+  padding-left: 2px;
+  background: url("../images/credit.png") no-repeat 105% 2px;
+}
+
+.credit-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  width: 195px;
+  height: 38px;
+  padding: 10px 44px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.service-bar-description {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
   font-size: 13px;
@@ -1198,18 +1233,13 @@ fieldset {
   color: var(--basic-black);
 }
 
-.delivery-title {
+.service-bar-title {
   color: var(--basic-blue);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: normal;
-}
-
-.guarantee,
-.credit {
-  display: none;
 }
 
 .service-button {
