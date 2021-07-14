@@ -8,7 +8,6 @@ const show = (el, displayType) => {
 }
 
 // MAP POPUP
-
 const mapButton = document.querySelector('.about-contacts-img');
 const mapModal = document.querySelector('.modal-map');
 
@@ -27,7 +26,6 @@ if (mapModal) {
 
 
 // CONTACT POPUP
-
 const contactButton = document.querySelector('.button-contacts');
 const contactModal = document.querySelector('.modal-login');
 
@@ -44,9 +42,7 @@ if (contactModal && contactButton) {
   })
 }
 
-
 // CATALOG POPUP
-
 const catalogButtons = document.querySelectorAll('.buy');
 const catalogModal = document.querySelector('.modal-catalog');
 
