@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
@@ -18,14 +18,8 @@
             <div class="logo-search">
               <a class="main-header-logo"></a>
               <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
-                <input
-                  class="header-form-input"
-                  id="search"
-                  type="search"
-                  name="search"
-                  placeholder="Поиск:"
-                  autocomplete="off"
-                />
+                <label class="visually-hidden" for="name">Поиск</label>
+                <input class="header-form-input" id="search" type="search" name="search" placeholder="Поиск:" autocomplete="off" />
               </form>
             </div>
 
@@ -147,13 +141,7 @@
         <div class="popular-bar">
           <ul class="popular-list">
             <li class="popular-item bosch-9000">
-              <img
-                class="popular-img"
-                src="images/bosch-bfg-9000.jpg "
-                width="144"
-                height="128"
-                alt="Модель перфоратора с большим сверлом"
-              />
+              <img class="popular-img" src="images/bosch-bfg-9000.jpg " width="144" height="128" alt="Модель перфоратора с большим сверлом" />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 9000</h4>
               <div class="hover-button">
                 <button class="buy card-button" type="button">Купить</button>
@@ -163,13 +151,7 @@
               <a class="price-new" href="catalog.html">25500 Р.</a>
             </li>
             <li class="popular-item bosch-3000">
-              <img
-                class="popular-img"
-                src="images/bosch-bfg-3000.jpg "
-                width="144"
-                height="128"
-                alt="Модель перфоратора с тонким сверлом"
-              />
+              <img class="popular-img" src="images/bosch-bfg-3000.jpg " width="144" height="128" alt="Модель перфоратора с тонким сверлом" />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 3000</h4>
               <div class="hover-button">
                 <button class="buy card-button" type="button">Купить</button>
@@ -180,13 +162,7 @@
               <span class="badge">NEW</span>
             </li>
             <li class="popular-item bosch-6000">
-              <img
-                class="popular-img"
-                src="images/bosch-bfg-6000.jpg "
-                width="144"
-                height="128"
-                alt="Модель перфоратора со средним сверлом"
-              />
+              <img class="popular-img" src="images/bosch-bfg-6000.jpg " width="144" height="128" alt="Модель перфоратора со средним сверлом" />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 6000</h4>
               <div class="hover-button">
                 <button class="buy card-button" type="button">Купить</button>
@@ -196,13 +172,7 @@
               <a class="price-new" href="catalog.html">23500 Р.</a>
             </li>
             <li class="popular-item">
-              <img
-                class="popular-img bosch-2000"
-                src="images/bosch-bfg-2000.jpg"
-                width="144"
-                height="128"
-                alt="Модель перфоратора с малым сверлом"
-              />
+              <img class="popular-img bosch-2000" src="images/bosch-bfg-2000.jpg" width="144" height="128" alt="Модель перфоратора с малым сверлом" />
               <h4 class="popular-subject">Перфоратор BOSCH BFG 2000</h4>
               <div class="hover-button">
                 <button class="buy card-button" type="button">Купить</button>
@@ -240,13 +210,7 @@
           </li>
           <li class="producers-item">
             <a class="producers-link" href="catalog.html">
-              <img
-                class="producers-img"
-                src="images/interskol-logo.png "
-                width="200"
-                height="76"
-                alt="логотип Интерскол"
-              />
+              <img class="producers-img" src="images/interskol-logo.png " width="200" height="76" alt="логотип Интерскол" />
             </a>
           </li>
           <li class="producers-item">
@@ -331,8 +295,10 @@
         <section class="about-info">
           <h3 class="about-title">Компания &#171;ТЕХНОМАРТ&#187;</h3>
           <p class="about-description">
-            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br />
-            ремонта и строительства не оставит равнодушными любителей сэкономить на <br />
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+            <br />
+            ремонта и строительства не оставит равнодушными любителей сэкономить на
+            <br />
             гастарбайтерах.<br /><br />
 
             Мы можем доставить ваш товар в самые отдаленные точки России!<br />
@@ -361,21 +327,15 @@
       <section class="footer-top">
         <div class="footer-top-wrapper container">
           <a>
-            <img
-              class="logo-img-footer"
-              src="images/logo-footer.png"
-              width="220"
-              height="68"
-              alt="Логотип Технопарка"
-            />
+            <img class="logo-img-footer" src="images/logo-footer.png" width="220" height="68" alt="Логотип Технопарка" />
           </a>
           <h2 class="visually-hidden">Контактная информация</h2>
           <div class="footer-address">
             <p class="footer-contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-            <a class="footer-contacts-phone" href="tel:+78005568628">+7 (800) 555-86-28</a>
+            <a class="footer-contacts-phone" href="tel:+78005568628">+7 (800)555-86-28</a>
           </div>
-          <nav class="footer-nav footer-nav-white footer-top">
-            <ul class="footer-nav-list">
+          <nav class="footer-nav footer-top">
+            <ul class="footer-nav-list footer-nav-white">
               <li class="footer-nav-item">
                 <a class="footer-navigation-white" href="catalog.html">Компания</a>
               </li>
@@ -392,9 +352,8 @@
                 <a class="footer-navigation-white" href="catalog.html">Контакты</a>
               </li>
             </ul>
-          </nav>
-          <nav class="footer-nav footer-nav-yellow footer-top">
-            <ul class="footer-nav-list">
+
+            <ul class="footer-nav-list footer-nav-yellow">
               <li class="footer-nav-item">
                 <a class="footer-navigation-yellow" href="catalog.html">Материалы</a>
               </li>
@@ -434,12 +393,12 @@
           </section>
 
           <p class="footer-feedback">
-            Обратная связь:<br />
+            Обратная связь: <br />
             <a class="feedback" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
 
           <p class="footer-develop">
-            Разработано:<br />
+            Разработано &#8212;<br />
             <a class="develop" href="https://htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
@@ -447,7 +406,7 @@
     </footer>
 
     <section class="modal modal-login">
-      <h2 class="visually-hidden">Обратная связь</h2>
+      <h2 class="feedback-modal visually-hidden">Обратная связь</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="login-form-header">
           <p class="name-user">
@@ -471,15 +430,7 @@
     </section>
 
     <section class="modal modal-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465617357!2d30.31521485193363!3d59.96826866658088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625595853531!5m2!1sru!2sru"
-        width="943"
-        height="449"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      >
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465617357!2d30.31521485193363!3d59.96826866658088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625595853531!5m2!1sru!2sru" width="943" height="449" style="border: 0" allowfullscreen="" loading="lazy"> </iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
