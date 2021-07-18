@@ -289,8 +289,8 @@
 }
 
 .icon-cart {
-  padding-left: 53px;
-  padding-right: 24px;
+  padding-left: 48px;
+  padding-right: 28px;
   position: relative;
 }
 
@@ -699,7 +699,7 @@
 }
 
 .categories-material {
-  background: url("../images/material-card.svg") no-repeat 85% 50% var(--special-yellow);
+  background: url("../images/material-card.svg") no-repeat 83% 50% var(--special-yellow);
   position: relative;
   overflow: hidden;
 }
@@ -1368,7 +1368,7 @@
 }
 
 .about-contacts-img {
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 /*footer*/
@@ -1707,8 +1707,8 @@
   padding-bottom: 30px;
   padding-left: 30px;
   background: -o-linear-gradient(top, var(--basic-white) 0%, var(-) 100%), var(--basic-light-grey);
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--basic-white)), to(var(--basic-white-transparent))), var(--basic-light-grey);
   background: -o-linear-gradient(top, var(--basic-white) 0%, var(--basic-white-transparent) 100%), var(--basic-light-grey);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--basic-white)), to(var(--basic-white-transparent))), var(--basic-light-grey);
   background: linear-gradient(180deg, var(--basic-white) 0%, var(--basic-white-transparent) 100%), var(--basic-light-grey);
   width: 940px;
 }
@@ -1833,13 +1833,8 @@
   color: var(--basic-black);
 }
 
-.cost {
-  margin-top: 14px;
-  margin-bottom: 11px;
-}
-
-.filter {
-  margin-top: 14px;
+.filter-fieldset .price-title {
+  padding-top: 14px;
 }
 
 .filter-title {
@@ -1866,11 +1861,6 @@
   border: none;
   margin-bottom: 18px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--special-pagination-grey);
-}
-
-.filter-form .filter-checkbox:last-child {
-  padding-bottom: 29px;
   border-bottom: 1px solid var(--special-pagination-grey);
 }
 
@@ -1939,9 +1929,21 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.price-controls .min-price {
+.price-controls-separator {
+  display: block;
+  width: 9px;
+  height: 1px;
+  margin-bottom: 6px;
+  background: var(--special-price-input);
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -1981,7 +1983,7 @@ input::-webkit-inner-spin-button {
 }
 
 .checkbox-feed {
-  margin-bottom: 22px;
+  padding-top: 17px;
 }
 
 .price-title,
@@ -1996,7 +1998,7 @@ input::-webkit-inner-spin-button {
 }
 
 .checkbox-producers {
-  margin-bottom: 14px;
+  padding-top: 14px;
 }
 
 .input-range {
@@ -2024,11 +2026,27 @@ input::-webkit-inner-spin-button {
   list-style: none;
 }
 
-.filter-form fieldset {
+.filter-form .filter-fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 0px;
   border: none;
+  border-bottom: 1px solid var(--special-pagination-grey);
+}
+
+.filter-form .price-fieldset {
+  padding-top: 13px;
+  padding-bottom: 22px;
+}
+
+.filter-form .producers-fieldset {
+  padding-top: 18px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+}
+
+.filter-form .feed-fieldset {
+  padding-top: 23px;
+  border-bottom: none;
 }
 
 .filter .produsers-list {
@@ -2036,7 +2054,7 @@ input::-webkit-inner-spin-button {
 }
 
 .filter-option {
-  padding-left: 35px;
+  padding-left: 32px;
   margin-bottom: 20px;
 }
 
